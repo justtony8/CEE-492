@@ -28,11 +28,11 @@
       email: "author2@illinois.edu",
     ),
     (
-      name: "Jinghao Meng",
+      name: "HeeJae Jeon",
       department: [Department 2],
       organization: [University of Illinois Urbana-Champaign],
       location: [Urbana, IL, USA],
-      email: "author2@illinois.edu",
+      email: "heejaej2@illinois.edu",
     ),
   ),
   index-terms: ("Optional", "Keywords", "Here"),
