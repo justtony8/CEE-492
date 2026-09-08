@@ -29,7 +29,7 @@
     ),
     (
       name: "HeeJae Jeon",
-      department: [Department 2],
+      department: [Department of Civil and Environmental Engineering],
       organization: [University of Illinois Urbana-Champaign],
       location: [Urbana, IL, USA],
       email: "heejaej2@illinois.edu",
@@ -39,7 +39,7 @@
   bibliography: bibliography("refs.bib"),
 )
 
-= First Section hi
+= First Section
 
 
 To add citations to the report, go to #link("https://scholar.google.com"), search for a paper, click on the quotation mark icon below the search result, and copy the BibTeX entry. Then paste it into the `refs.bib` file. You can cite papers using the `@` symbol followed by the citation key, e.g., @lowry1951protein.
