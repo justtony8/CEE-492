@@ -18,7 +18,7 @@
       department: [Department of civil engineering],
       organization: [University of Illinois Urbana-Champaign],
       location: [Urbana, IL, USA],
-      email: "author2@illinois.edu",
+      email: "xinyux6@illinois.edu",
     ),
     (
       name: "Jinghao Meng",
