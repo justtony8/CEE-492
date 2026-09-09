@@ -28,7 +28,7 @@
       email: "author2@illinois.edu",
     ),
     (
-      name: "HeeJae Jeon",
+      name: "Heejae Jeon",
       department: [Department of Civil and Environmental Engineering],
       organization: [University of Illinois Urbana-Champaign],
       location: [Urbana, IL, USA],
