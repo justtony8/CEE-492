@@ -42,11 +42,10 @@
 = Motivation and problem
 
 
-To add citations to the report, go to #link("https://scholar.google.com"), search for a paper, click on the quotation mark icon below the search result, and copy the BibTeX entry. Then paste it into the `refs.bib` file. You can cite papers using the `@` symbol followed by the citation key, e.g., @lowry1951protein.
+Transportation agencies are responsible for maintaining a large number of bridges while working with limited budgets, time, and inspection resources. Because bridge condition can vary depending on factors such as age, structural characteristics, traffic demand, and material type, identifying bridges that may require greater maintenance attention is an important infrastructure management problem. A data-driven approach may help agencies better understand which bridge characteristics are associated with deteriorated conditions and support more efficient maintenance planning.
+#v(0.5em)
 
-Other options to get BibTeX entries for your references include #link("https://www.bibtex.com/converters/") and asking an LLM to generate the a BibTeX entry for you. (If you use an LLM, make sure to verify the generated BibTeX entry for correctness.)
-
-More information about citations can be found in the Typst documentation: #link("https://typst.app/docs/reference/model/cite").
+The goal of this project is to investigate whether historical bridge inventory data can be used to predict bridge condition. By identifying bridges that are more likely to be in poor condition, the analysis may provide useful information for prioritizing inspection, maintenance, and rehabilitation activities. The project will therefore focus not only on prediction accuracy but also on understanding which bridge characteristics are most strongly related to bridge condition.
 
 == First Subsection
 
