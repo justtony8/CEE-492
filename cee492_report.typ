@@ -2,9 +2,7 @@
 
 #show: ieee.with(
   title: [Data-Driven Prediction of Bridge Condition Using National Bridge Inventory Data],
-  abstract: [
-    This is where you put your abstract. Abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract.
-  ],
+  
   authors: (
     (
       name: "Powei Tao",
@@ -51,10 +49,6 @@ The goal of this project is to investigate whether historical bridge inventory d
 
 To add figures to your report, save the image file in the `figures` folder and use the `#figure` command as shown below to include it in your document. You can specify the width of the image and add a caption. Then you can reference the figure like this: @proofread.
 
-#figure(
-  image("figures/proof-read.png", width: 80%),
-  caption: [A humble request. (Copyright: University of the Fraser Valley.)],
-) <proofread>
 
 === First Subsubsection
 
