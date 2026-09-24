@@ -48,6 +48,97 @@ The goal of this project is to investigate whether historical bridge inventory d
 = Data and Prediction Target
 
 This project will use National Bridge Inventory (NBI) data for bridges located in Illinois, obtained through the Federal Highway Administration's LTBP InfoBridge. The dataset covers the period from 2002 through 2025 and contains 582,165 bridge-year observations and 18 attributes. Each row represents the record of a bridge for a specific year. The dataset contains identification, ownership, structural, traffic, dimensional, and condition information. The data are stored in a tabular format suitable for statistical analysis and predictive modeling. The 18 attributes included in the dataset are:
+= Dataset Attributes
+
+The National Bridge Inventory (NBI) dataset contains bridge identification,
+traffic, structural, geometric, and condition-related attributes. The variables
+used in this study are summarized in Table @nbi-attributes.
+
+#figure(
+  caption: [Description of NBI attributes used in the analysis],
+  table(
+    columns: (2.2fr, 1.0fr, 4.8fr),
+    align: (left, center, left),
+
+    table.header(
+      [*Attribute Name*],
+      [*Units*],
+      [*Description*],
+    ),
+
+    [Year],
+    [year],
+    [Year corresponding to the NBI record or inspection dataset.],
+
+    [1 - State Code],
+    [code],
+    [FHWA numeric code identifying the state in which the bridge is located.],
+
+    [1 - State Name],
+    [N/A],
+    [Name of the state in which the bridge is located.],
+
+    [8 - Structure Number],
+    [identifier],
+    [Structure number assigned to uniquely identify a bridge within the reporting state or agency.],
+
+    [2025 NBI Structure Number],
+    [identifier],
+    [Structure identifier used to associate the bridge record with the 2025 NBI dataset.],
+
+    [22 - Owner Agency],
+    [code / category],
+    [Code identifying the public agency or organization responsible for ownership of the bridge.],
+
+    [27 - Year Built],
+    [year],
+    [Year in which the bridge was originally constructed.],
+
+    [29 - Average Daily Traffic],
+    [vehicles/day],
+    [Average number of vehicles crossing the structure per day.],
+
+    [43A - Main Span Material],
+    [category],
+    [Material classification of the bridge main span, such as concrete, steel, or other structural materials.],
+
+    [43B - Main Span Design],
+    [category],
+    [Structural design or construction type of the bridge main span, such as beam, girder, truss, arch, or other design types.],
+
+    [45 - Number of Spans in Main Unit],
+    [count],
+    [Number of individual spans contained in the main structural unit of the bridge.],
+
+    [49 - Structure Length],
+    [ft],
+    [Total length of the bridge structure measured along its centerline.],
+
+    [CAT10 - Bridge Condition],
+    [category],
+    [Overall bridge condition classification, expressed as Good, Fair, or Poor.],
+
+    [Bridge Age],
+    [yr],
+    [Age of the bridge at the time of the record, calculated from the dataset year and the year built.],
+
+    [CAT29 - Deck Area],
+    [sq. ft.],
+    [Total bridge deck area, representing the plan area of the bridge deck.],
+
+    [48 - Length of Maximum Span],
+    [ft],
+    [Length of the longest individual span in the bridge structure.],
+
+    [109 - Average Daily Truck Traffic],
+    [% ADT],
+    [Percentage of average daily traffic consisting of trucks.],
+
+    [52 - Deck Width - Out to Out],
+    [ft],
+    [Total deck width measured from the outside edge of one side of the bridge deck to the outside edge of the other side.],
+  ),
+) <nbi-attributes>
 #v(0.5em)
 The primary prediction target will be Bridge Condition, which classifies bridges as Good, Fair, or Poor. Therefore, the predictive task will be treated as a classification problem. Identification variables such as Structure Number will be retained for organizing and tracking observations but will not be used directly as predictive features. Because State Code and State Name are constant for the Illinois-only dataset, they will also not provide useful information for predicting condition.
 
