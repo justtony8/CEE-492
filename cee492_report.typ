@@ -47,12 +47,7 @@ The goal of this project is to investigate whether historical bridge inventory d
 
 = Data and Prediction Target
 
-This project will use National Bridge Inventory (NBI) data for bridges located in Illinois, obtained through the Federal Highway Administration's LTBP InfoBridge. The dataset covers the period from 2002 through 2025 and contains 582,165 bridge-year observations and 18 attributes. Each row represents the record of a bridge for a specific year. The dataset contains identification, ownership, structural, traffic, dimensional, and condition information. The data are stored in a tabular format suitable for statistical analysis and predictive modeling. The 18 attributes included in the dataset are:
-= Dataset Attributes
-
-The National Bridge Inventory (NBI) dataset contains bridge identification,
-traffic, structural, geometric, and condition-related attributes. The variables
-used in this study are summarized in Table @nbi-attributes.
+This project will use National Bridge Inventory (NBI) data for bridges located in Illinois, obtained through the Federal Highway Administration's LTBP InfoBridge. The dataset covers the period from 2002 through 2025 and contains 582,165 bridge-year observations and 18 attributes. Each row represents the record of a bridge for a specific year. The dataset contains identification, ownership, structural, traffic, dimensional, and condition information. The data are stored in a tabular format suitable for statistical analysis and predictive modeling. The 18 attributes included in the dataset are summarized in Table @nbi-attributes.
 
 #figure(
   caption: [Description of NBI attributes used in the analysis],
