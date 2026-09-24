@@ -44,62 +44,21 @@ Transportation agencies are responsible for maintaining a large number of bridge
 #v(0.5em)
 The goal of this project is to investigate whether historical bridge inventory data can be used to predict bridge condition. By identifying bridges that are more likely to be in poor condition, the analysis may provide useful information for prioritizing inspection, maintenance, and rehabilitation activities. The project will therefore focus not only on prediction accuracy but also on understanding which bridge characteristics are most strongly related to bridge condition.
 
-== First Subsection
-
-To add figures to your report, save the image file in the `figures` folder and use the `#figure` command as shown below to include it in your document. You can specify the width of the image and add a caption. Then you can reference the figure like this: @proofread.
-
-#figure(
-  image("figures/proof-read.png", width: 80%),
-  caption: [A humble request. (Copyright: University of the Fraser Valley.)],
-) <proofread>
-
-=== First Subsubsection
-
-You can make sub, sub-sub, and sub-sub-sub sections by adding `=` signs in front of the section title. There needs to be a space between the last `=` sign and the title text.
 
 = Data and Prediction Target
 
 This project will use data from the National Bridge Inventory (NBI). The dataset contains detailed information on bridges, including physical, structural, traffic, and operational characteristics. Potential predictor variables include year built, structure length, number of spans, maximum span length, deck area, main span material, structural design type, average daily traffic, truck traffic, roadway width, and other available bridge characteristics.
-
+#v(0.5em)
 The primary prediction target will be Bridge Condition, which classifies bridges into categories such as Good, Fair, and Poor. Bridge condition will therefore be treated as a classification problem. Before developing the predictive model, the dataset will be cleaned to address missing values, inconsistent entries, and variables that are not useful for prediction. Exploratory analysis will also be conducted to examine the distribution of bridge conditions and relationships between bridge characteristics and condition categories.
 
-You can add tables using the `#table` command. Here is an example table:
+= Proposed Study
+The study will begin with exploratory data analysis to understand the characteristics of the NBI dataset and identify patterns related to bridge condition. We will compare bridge condition with variables such as bridge age, traffic volume, structural material, bridge size, and structural type. Visualizations and summary statistics will be used to examine whether certain characteristics are more frequently associated with Fair or Poor bridge conditions.
+#v(0.5em)
+Next, we will develop classification models to predict bridge condition using selected bridge characteristics. The dataset will be divided into training and testing data so that model performance can be evaluated using observations that were not used to train the model. Appropriate classification performance measures, such as accuracy, precision, recall, and a confusion matrix, will be used to evaluate the predictions. We will also examine the relative importance of predictor variables to determine which bridge characteristics are most useful for identifying differences in bridge condition.
+#v(0.5em)
+The expected outcome is a predictive model that can estimate bridge condition from available bridge characteristics while also providing information about the factors associated with bridge deterioration. This information could support transportation agencies in identifying bridges that may require greater attention and could contribute to more data-driven prioritization of bridge maintenance and rehabilitation activities.
 
-#figure(
-  caption: [Example Table],
-  table(
-    columns: (auto, auto, auto),
-    table.header([*Column 1*], [*Column 2*], [*Column 3*]),
-    "Row 1", "Data 1", [Data 2],
-    image("figures/proof-read.png", width: 40%), "Data 3", "Data 4",
-  ),
-) <table-example>
-
-You can reference the table like this: @table-example.
-
-== Various Text Formatting Options
-
-You can make text _italic_ by surrounding it with `_` symbols, *bold* by surrounding it with `*` symbols, and _*bold italic*_ by combining both. You can format `inline code snippets` by surrounding them with backtick (\`) characters.
-
-You can create bullet point lists using `-` symbols:
-- Bullet point 1
-- Bullet point 2
-  - Sub bullet point 1
-  - Sub bullet point 2
-
-
-You can create numbered lists using numbers followed by a period (or using `+` symbols, which number the items for you):
-1. First item
-2. Second item
-  1. Sub item 1
-  2. Sub item 2
-
-
-
-== Equations
-
-You can create equations using `$` symbols. For example, you can make an inline equation like this $E=m c^2$ or a displayed equation like this:
-
-$ x < y => x gt.eq.not y $ <eq1>
-
-You can reference the equation like this: Eq. @eq1.
+= Team Plan
+The project work will be divided among team members while major decisions and final results will be reviewed together. One part of the team will focus on data collection, cleaning, and preparation, including selecting relevant NBI variables and handling missing or inconsistent data. Another part will focus on exploratory data analysis and visualization to identify important patterns and relationships in the dataset. The remaining work will focus on predictive model development and evaluation, including training the classification models and assessing their performance.
+#v(0.5em)
+All team members will contribute to interpreting the results, reviewing the analysis and code, preparing figures and tables, and writing and editing the final report. This approach will allow each member to contribute to both the technical analysis and the final presentation of the project.
