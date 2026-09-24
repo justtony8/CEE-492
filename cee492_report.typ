@@ -88,11 +88,3 @@ You can create numbered lists using numbers followed by a period (or using `+` s
   2. Sub item 2
 
 
-
-== Equations
-
-You can create equations using `$` symbols. For example, you can make an inline equation like this $E=m c^2$ or a displayed equation like this:
-
-$ x < y => x gt.eq.not y $ <eq1>
-
-You can reference the equation like this: Eq. @eq1.
