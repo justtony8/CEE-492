@@ -1,7 +1,7 @@
 #import "@preview/charged-ieee:0.1.4": ieee
 
 #show: ieee.with(
-  title: [An important report.],
+  title: [Data-Driven Prediction of Bridge Condition Using National Bridge Inventory Data],
   abstract: [
     This is where you put your abstract. Abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract.
   ],
@@ -28,7 +28,7 @@
       email: "author2@illinois.edu",
     ),
     (
-      name: "Heejae Jeon",
+      name: "HeeJae Jeon",
       department: [Department of Civil and Environmental Engineering],
       organization: [University of Illinois Urbana-Champaign],
       location: [Urbana, IL, USA],
@@ -39,7 +39,7 @@
   bibliography: bibliography("refs.bib"),
 )
 
-= First Section
+= Motivation and problem
 
 
 To add citations to the report, go to #link("https://scholar.google.com"), search for a paper, click on the quotation mark icon below the search result, and copy the BibTeX entry. Then paste it into the `refs.bib` file. You can cite papers using the `@` symbol followed by the citation key, e.g., @lowry1951protein.
@@ -61,7 +61,7 @@ To add figures to your report, save the image file in the `figures` folder and u
 
 You can make sub, sub-sub, and sub-sub-sub sections by adding `=` signs in front of the section title. There needs to be a space between the last `=` sign and the title text.
 
-= Second Section
+= Data and prediction target
 
 You can add tables using the `#table` command. Here is an example table:
 
