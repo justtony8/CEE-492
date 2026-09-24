@@ -47,7 +47,7 @@ The goal of this project is to investigate whether historical bridge inventory d
 
 = Data and Prediction Target
 
-This project will use National Bridge Inventory (NBI) data for bridges located in Illinois, obtained through the Federal Highway Administration's LTBP InfoBridge @fhwa_infobridge. The dataset covers the period from 2002 through 2025 and contains 582,165 bridge-year observations and 18 attributes. Each row represents the record of a bridge for a specific year. The dataset contains identification, ownership, structural, traffic, dimensional, and condition information. The data are stored in a tabular format suitable for statistical analysis and predictive modeling. The 18 attributes included in the dataset are summarized in @nbi-attributes and @nbi-attributes-continued.
+This project will use National Bridge Inventory (NBI) data for Illinois, obtained from the Federal Highway Administration's LTBP InfoBridge @fhwa_infobridge. The data were downloaded in tabular format and include 582,165 bridge-year observations from 2002 through 2025 with 18 attributes. Each row represents a bridge record for a specific year and includes identification, ownership, structural, traffic, dimensional, and condition information. The data are stored in a tabular format suitable for statistical analysis and predictive modeling. The 18 attributes included in the dataset are summarized in @nbi-attributes and @nbi-attributes-continued.
 
 #figure(
   caption: [Description of NBI attributes used in the analysis (Part 1)],
@@ -96,7 +96,7 @@ This project will use National Bridge Inventory (NBI) data for bridges located i
     [43B - Main Span Design],
     [category],
     [Structural design or construction type of the bridge main span, such as beam, girder, truss, arch, or other design types.],
-    
+
     [45 - Number of Spans in Main Unit],
     [count],
     [Number of individual spans contained in the main structural unit of the bridge.],
