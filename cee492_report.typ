@@ -47,7 +47,7 @@ The goal of this project is to investigate whether historical bridge inventory d
 
 = Data and Prediction Target
 
-This project will use National Bridge Inventory (NBI) data for bridges located in Illinois, obtained through the Federal Highway Administration's LTBP InfoBridge. The dataset covers the period from 2002 through 2025 and contains 582,165 bridge-year observations and 18 attributes. Each row represents the record of a bridge for a specific year. The dataset contains identification, ownership, structural, traffic, dimensional, and condition information. The data are stored in a tabular format suitable for statistical analysis and predictive modeling. The 18 attributes included in the dataset are summarized in Table @nbi-attributes.
+This project will use National Bridge Inventory (NBI) data for bridges located in Illinois, obtained through the Federal Highway Administration's LTBP InfoBridge @fhwa_infobridge. The dataset covers the period from 2002 through 2025 and contains 582,165 bridge-year observations and 18 attributes. Each row represents the record of a bridge for a specific year. The dataset contains identification, ownership, structural, traffic, dimensional, and condition information. The data are stored in a tabular format suitable for statistical analysis and predictive modeling. The 18 attributes included in the dataset are summarized in @nbi-attributes and @nbi-attributes-continued.
 
 #figure(
   caption: [Description of NBI attributes used in the analysis (Part 1)],
@@ -96,6 +96,19 @@ This project will use National Bridge Inventory (NBI) data for bridges located i
     [43B - Main Span Design],
     [category],
     [Structural design or construction type of the bridge main span, such as beam, girder, truss, arch, or other design types.],
+    
+    [45 - Number of Spans in Main Unit],
+    [count],
+    [Number of individual spans contained in the main structural unit of the bridge.],
+
+    [49 - Structure Length],
+    [ft],
+    [Total length of the bridge structure measured along its centerline.],
+
+    [CAT10 - Bridge Condition],
+    [category],
+    [Overall bridge condition classification, expressed as Good, Fair, or Poor.],
+
   ),
 ) <nbi-attributes>
 
@@ -110,18 +123,6 @@ This project will use National Bridge Inventory (NBI) data for bridges located i
       [*Units*],
       [*Description*],
     ),
-
-    [45 - Number of Spans in Main Unit],
-    [count],
-    [Number of individual spans contained in the main structural unit of the bridge.],
-
-    [49 - Structure Length],
-    [ft],
-    [Total length of the bridge structure measured along its centerline.],
-
-    [CAT10 - Bridge Condition],
-    [category],
-    [Overall bridge condition classification, expressed as Good, Fair, or Poor.],
 
     [Bridge Age],
     [yr],
@@ -143,7 +144,8 @@ This project will use National Bridge Inventory (NBI) data for bridges located i
     [ft],
     [Total deck width measured from the outside edge of one side of the bridge deck to the outside edge of the other side.],
   ),
-)
+) <nbi-attributes-continued>
+
 #v(0.5em)
 The primary prediction target will be Bridge Condition, which classifies bridges as Good, Fair, or Poor. Therefore, the predictive task will be treated as a classification problem. Identification variables such as Structure Number will be retained for organizing and tracking observations but will not be used directly as predictive features. Because State Code and State Name are constant for the Illinois-only dataset, they will also not provide useful information for predicting condition.
 
