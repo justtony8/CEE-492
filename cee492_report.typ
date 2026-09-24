@@ -2,9 +2,7 @@
 
 #show: ieee.with(
   title: [Data-Driven Prediction of Bridge Condition Using National Bridge Inventory Data],
-  abstract: [
-    This is where you put your abstract. Abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract.
-  ],
+ 
   authors: (
     (
       name: "Powei Tao",
@@ -25,7 +23,7 @@
       department: [Department of Civil and Environmental Engineering],
       organization: [University of Illinois Urbana-Champaign],
       location: [Urbana, IL, USA],
-      email: "author2@illinois.edu",
+      email: "jmeng10@illinois.edu",
     ),
     (
       name: "HeeJae Jeon",
@@ -67,15 +65,7 @@ The primary prediction target will be Bridge Condition, which classifies bridges
 
 You can add tables using the `#table` command. Here is an example table:
 
-#figure(
-  caption: [Example Table],
-  table(
-    columns: (auto, auto, auto),
-    table.header([*Column 1*], [*Column 2*], [*Column 3*]),
-    "Row 1", "Data 1", [Data 2],
-    image("figures/proof-read.png", width: 40%), "Data 3", "Data 4",
-  ),
-) <table-example>
+
 
 You can reference the table like this: @table-example.
 
