@@ -47,7 +47,7 @@ The goal of this project is to investigate whether historical bridge inventory d
 
 = Data and Prediction Target
 
-This project will use data from the National Bridge Inventory (NBI). The dataset contains detailed information on bridges, including physical, structural, traffic, and operational characteristics. Potential predictor variables include year built, structure length, number of spans, maximum span length, deck area, main span material, structural design type, average daily traffic, truck traffic, roadway width, and other available bridge characteristics.
+This project will use data from the National Bridge Inventory (NBI), accessed through the Federal Highway Administration's LTBP InfoBridge @fhwa_infobridge. The dataset contains detailed information on bridges, including physical, structural, traffic, and operational characteristics. Potential predictor variables include year built, structure length, number of spans, maximum span length, deck area, main span material, structural design type, average daily traffic, truck traffic, roadway width, and other available bridge characteristics.
 #v(0.5em)
 The primary prediction target will be Bridge Condition, which classifies bridges into categories such as Good, Fair, and Poor. Bridge condition will therefore be treated as a classification problem. Before developing the predictive model, the dataset will be cleaned to address missing values, inconsistent entries, and variables that are not useful for prediction. Exploratory analysis will also be conducted to examine the distribution of bridge conditions and relationships between bridge characteristics and condition categories.
 
