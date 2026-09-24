@@ -2,7 +2,9 @@
 
 #show: ieee.with(
   title: [Data-Driven Prediction of Bridge Condition Using National Bridge Inventory Data],
-  
+  abstract: [
+    This is where you put your abstract. Abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract.
+  ],
   authors: (
     (
       name: "Powei Tao",
@@ -42,19 +44,26 @@
 
 Transportation agencies are responsible for maintaining a large number of bridges while working with limited budgets, time, and inspection resources. Because bridge condition can vary depending on factors such as age, structural characteristics, traffic demand, and material type, identifying bridges that may require greater maintenance attention is an important infrastructure management problem. A data-driven approach may help agencies better understand which bridge characteristics are associated with deteriorated conditions and support more efficient maintenance planning.
 #v(0.5em)
-
 The goal of this project is to investigate whether historical bridge inventory data can be used to predict bridge condition. By identifying bridges that are more likely to be in poor condition, the analysis may provide useful information for prioritizing inspection, maintenance, and rehabilitation activities. The project will therefore focus not only on prediction accuracy but also on understanding which bridge characteristics are most strongly related to bridge condition.
 
 == First Subsection
 
 To add figures to your report, save the image file in the `figures` folder and use the `#figure` command as shown below to include it in your document. You can specify the width of the image and add a caption. Then you can reference the figure like this: @proofread.
 
+#figure(
+  image("figures/proof-read.png", width: 80%),
+  caption: [A humble request. (Copyright: University of the Fraser Valley.)],
+) <proofread>
 
 === First Subsubsection
 
 You can make sub, sub-sub, and sub-sub-sub sections by adding `=` signs in front of the section title. There needs to be a space between the last `=` sign and the title text.
 
-= Data and prediction target
+= Data and Prediction Target
+
+This project will use data from the National Bridge Inventory (NBI). The dataset contains detailed information on bridges, including physical, structural, traffic, and operational characteristics. Potential predictor variables include year built, structure length, number of spans, maximum span length, deck area, main span material, structural design type, average daily traffic, truck traffic, roadway width, and other available bridge characteristics.
+
+The primary prediction target will be Bridge Condition, which classifies bridges into categories such as Good, Fair, and Poor. Bridge condition will therefore be treated as a classification problem. Before developing the predictive model, the dataset will be cleaned to address missing values, inconsistent entries, and variables that are not useful for prediction. Exploratory analysis will also be conducted to examine the distribution of bridge conditions and relationships between bridge characteristics and condition categories.
 
 You can add tables using the `#table` command. Here is an example table:
 
@@ -88,3 +97,11 @@ You can create numbered lists using numbers followed by a period (or using `+` s
   2. Sub item 2
 
 
+
+== Equations
+
+You can create equations using `$` symbols. For example, you can make an inline equation like this $E=m c^2$ or a displayed equation like this:
+
+$ x < y => x gt.eq.not y $ <eq1>
+
+You can reference the equation like this: Eq. @eq1.
